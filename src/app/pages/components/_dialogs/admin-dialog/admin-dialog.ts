@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 
 @Component({
@@ -6,6 +6,7 @@ import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 	standalone: false,
 	templateUrl: './admin-dialog.html',
 	styleUrl: './admin-dialog.css',
+	encapsulation: ViewEncapsulation.None
 })
 export class AdminDialog {
 

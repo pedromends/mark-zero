@@ -2,7 +2,7 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/
 import { provideRouter } from '@angular/router';
 
 import { providePrimeNG } from 'primeng/config';
-import { StarkTheme } from '../stark-theme';
+import { StarkTheme } from './themes/stark-theme';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {

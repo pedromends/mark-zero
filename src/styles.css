@@ -2,3 +2,42 @@
 
 @import 'tailwindcss';
 @import "primeicons/primeicons.css";
+
+@font-face {
+    font-family: 'stark';
+    src: url('/fonts/FSIndustrieLight.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'stark';
+    src: url('/fonts/FSIndustrieRegular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'stark';
+    src: url('/fonts/FSIndustrieMedium.otf') format('opentype');
+    font-weight: 500;
+}
+@font-face {
+  font-family: 'stark';
+  src: url('/fonts/FSIndustrieLight.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'stark';
+  src: url('/fonts/FSIndustrieRegular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'stark';
+  src: url('/fonts/FSIndustrieMedium.otf') format('opentype');
+  font-weight: 500;
+}
+
+* {
+  font-family: 'stark';
+}

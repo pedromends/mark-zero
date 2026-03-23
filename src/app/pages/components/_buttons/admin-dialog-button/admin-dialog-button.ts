@@ -19,7 +19,8 @@ export class AdminDialogButton {
 			closable: true,
 			draggable: false,
 			modal: true,
-			width: '500px'
+			width: '500px',
+			header: 'SYSTEM_ROOT (ADMIN ACCESS)'
 		});
 
 		dialog?.onClose.subscribe({
