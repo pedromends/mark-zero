@@ -31,7 +31,6 @@ import { AdminDialogButton } from './_buttons/admin-dialog-button/admin-dialog-b
 	],
 	exports: [
 		Layout,
-		AdminDialog,
 		StandardButton,
 		AdminDialogButton,
 	],

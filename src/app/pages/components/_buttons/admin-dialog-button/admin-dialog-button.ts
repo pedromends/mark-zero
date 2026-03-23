@@ -15,7 +15,12 @@ export class AdminDialogButton {
 	) { }
 
 	openDialog() {
-		const dialog = this.dialogService.open(AdminDialog, {});
+		const dialog = this.dialogService.open(AdminDialog, {
+			closable: true,
+			draggable: false,
+			modal: true,
+			width: '500px'
+		});
 
 		dialog?.onClose.subscribe({
 			next: (value) => {
@@ -39,5 +44,6 @@ export class AdminDialogButton {
 		ripple.classList.remove('active');
 		void ripple.offsetWidth; // força reflow
 		ripple.classList.add('active');
+		this.openDialog();
 	}
 }
