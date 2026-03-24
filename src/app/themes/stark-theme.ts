@@ -1,6 +1,6 @@
+import { dialogCSS, tabsCSS } from "./components/dialog-theme";
 import { definePreset } from "@primeng/themes"
 import Aura from '@primeuix/themes/aura';
-import { dialogCSS, tabsCSS } from "./dialog-theme";
 
 export const StarkTheme = definePreset(Aura, {
 	components: {
@@ -13,14 +13,7 @@ export const StarkTheme = definePreset(Aura, {
 	},
 	semantic: {
 		colorScheme: {
-			light: {
-				primary: {
-					color: '#009199',
-					hoverColor: '#009199'
-				},
-			},
 			dark: {
-
 				primary: {
 					color: '#009199',
 					hoverColor: '#009199'

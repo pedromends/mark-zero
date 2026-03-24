@@ -9,7 +9,8 @@ import { CardModule } from 'primeng/card';
 import { AdminDialog } from './_dialogs/admin-dialog/admin-dialog';
 import { StandardButton } from './_buttons/standard-button/standard-button';
 import { TabsModule } from 'primeng/tabs';
-import { AdminDialogButton } from './_buttons/admin-dialog-button/admin-dialog-button';
+import { AdminDialogButton } from './_buttons/button-dialog-adm/button-dialog-adm';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
 	declarations: [
@@ -27,6 +28,7 @@ import { AdminDialogButton } from './_buttons/admin-dialog-button/admin-dialog-b
 		TabsModule,
 		ButtonModule,
 		CardModule,
+		DialogModule,
 
 	],
 	exports: [

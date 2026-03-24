@@ -1,11 +1,9 @@
-<div class="p-2 flex justify-start">
-    <p-drawer [(visible)]="visible" header="Drawer">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo
-            consequat.
-        </p>
-    </p-drawer>
-    <p-button (click)="visible = true" icon="pi pi-align-justify" styleClass="text-black" />
-</div>
+<p-drawer [(visible)]="visible" header="Drawer">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo
+        consequat.
+    </p>
+</p-drawer>
+<p-button (click)="visible = true" icon="pi pi-align-justify" class="md:hidden" />
