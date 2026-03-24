@@ -8,7 +8,7 @@
         <p-tabpanels>
             <p-tabpanel value="0">
                 <div class="card">
-                    <p-table [value]="equipes" [tableStyle]="{ 'min-width': '50rem' }">
+                    <p-table [value]="equipes" [loading]="carregando" [tableStyle]="{ 'min-width': '50rem' }">
                         <ng-template #header>
                             <tr>
                                 <th>Sigla</th>

@@ -12,7 +12,8 @@ import { EquipeDTO } from '../../../../model/equipe-dto';
 export class AdminDialog implements OnInit {
 
 	equipes: EquipeDTO[] = [];
-
+	carregando: boolean = false;
+	
 	constructor(
 		private ref: DynamicDialogRef<AdminDialog>,
 		private equipeService: EquipeService
@@ -23,12 +24,15 @@ export class AdminDialog implements OnInit {
 	}
 
 	buscaEquipes(): void {
+		this.carregando = true;
 		this.equipeService.buscarEquipes().subscribe({
 			next: (res: EquipeDTO[]) => {
 				this.equipes = res;
+				this.carregando = false;
 			},
 			error: (err) => {
-				console.log(err)
+				console.log(err);
+				this.carregando = false;
 			}
 		})
 	}
