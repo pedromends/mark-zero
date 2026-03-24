@@ -14,10 +14,8 @@ import { particleOptions } from './themes/particles/particle-options';
 	styleUrl: './app.css'
 })
 export class App {
-	protected readonly title = signal('mark-zero');
-
-	id = "tsparticles";
 	particlesOptions: ISourceOptions = particleOptions
+	protected readonly title = signal('mark-zero');
 
 	constructor(private readonly ngParticlesService: NgParticlesService) { }
 
@@ -25,9 +23,5 @@ export class App {
 		this.ngParticlesService.init(async (engine) => {
 			await loadFull(engine);
 		});
-	}
-
-	particlesLoaded(container: Container): void {
-		console.log(container);
 	}
 }

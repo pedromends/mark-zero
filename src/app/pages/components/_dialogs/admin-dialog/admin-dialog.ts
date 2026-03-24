@@ -1,5 +1,7 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { DynamicDialogRef } from 'primeng/dynamicdialog';
+import { EquipeService } from '../../../../services/equipe-service';
+import { EquipeDTO } from '../../../../model/equipe-dto';
 
 @Component({
 	selector: 'app-admin-dialog',
@@ -8,13 +10,31 @@ import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 	styleUrl: './admin-dialog.css',
 	encapsulation: ViewEncapsulation.None
 })
-export class AdminDialog {
+export class AdminDialog implements OnInit {
 
-	constructor( private ref: DynamicDialogRef<AdminDialog>){
+	equipes: EquipeDTO[] = [];
 
+	constructor(
+		private ref: DynamicDialogRef<AdminDialog>,
+		private equipeService: EquipeService
+	) {}
+
+	ngOnInit(): void {
+		this.buscaEquipes()
 	}
 
-	close(){
+	buscaEquipes(): void {
+		this.equipeService.buscarEquipes().subscribe({
+			next: (res: EquipeDTO[]) => {
+				this.equipes = res;
+			},
+			error: (err) => {
+				console.log(err)
+			}
+		})
+	}
+
+	close(): void {
 		this.ref.close(true)
 	}
 }

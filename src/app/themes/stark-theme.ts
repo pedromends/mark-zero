@@ -9,7 +9,7 @@ export const StarkTheme = definePreset(Aura, {
 		},
 		tabs: {
 			css: ({ dt }) => tabsCSS
-		}
+		},
 	},
 	semantic: {
 		colorScheme: {

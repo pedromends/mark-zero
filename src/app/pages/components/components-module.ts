@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { Layout } from './layout/layout';
 
+import { TableModule } from 'primeng/table';
 import { DrawerModule } from 'primeng/drawer';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
@@ -29,7 +30,7 @@ import { DialogModule } from 'primeng/dialog';
 		ButtonModule,
 		CardModule,
 		DialogModule,
-
+		TableModule,
 	],
 	exports: [
 		Layout,
