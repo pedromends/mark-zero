@@ -8,7 +8,6 @@ import { EquipeDTO } from '../../../../model/equipe-dto';
 	standalone: false,
 	templateUrl: './admin-dialog.html',
 	styleUrl: './admin-dialog.css',
-	encapsulation: ViewEncapsulation.None
 })
 export class AdminDialog implements OnInit {
 
