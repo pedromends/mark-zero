@@ -5,22 +5,11 @@
     color: #8ffcff;
     overflow: hidden;
     background: radial-gradient(circle at top, #0a1a2f, #050b16 70%);
-
-    clip-path: polygon(30px 0%,
-            calc(100% - 60px) 0%,
-            100% 40px,
-            100% calc(100% - 30px),
-            calc(100% - 30px) 100%,
-            80px 100%,
-            0% calc(100% - 60px),
-            0% 30px);
+    clip-path: polygon(40px 0%, calc(99% - 30px) 0%, 100% 41px, 100% calc(90% - 25px), calc(100% - 40px) 100%, 40px 100%, 0% calc(100% - 43px), 0% 40px);
 }
 
-/*
-🔷 Borda dupla com profundidade
-*/
-.hud-frame::before,
-.hud-frame::after {
+/* 🔷 Borda dupla com profundidade */
+.hud-frame::before, .hud-frame::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -30,16 +19,13 @@
 
 .hud-frame::before {
     border: 1px solid rgba(0, 255, 255, 0.9);
-    box-shadow:
-        0 0 8px rgba(0, 255, 255, 0.8),
-        inset 0 0 12px rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.8), inset 0 0 12px rgba(0, 255, 255, 0.4);
 }
 
 .hud-frame::after {
     inset: 6px;
     border: 1px solid rgba(0, 180, 255, 0.4);
 }
-
 
 /* 🔷 Cantos tecnológicos (DETALHE QUE FAZ DIFERENÇA) */
 .hud-frame .corner {
@@ -82,19 +68,10 @@
     position: relative;
     margin-bottom: 1.5rem;
     padding: 0.6rem 1rem;
-
     font-size: 0.8rem;
     letter-spacing: 2px;
-
-    background: linear-gradient(90deg,
-            rgba(0, 255, 255, 0.25),
-            transparent);
-
-    clip-path: polygon(0 0,
-            calc(100% - 30px) 0,
-            100% 50%,
-            calc(100% - 30px) 100%,
-            0 100%);
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.25), transparent);
+    clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 30px) 100%, 0 100%);
 }
 
 /* 🔷 Grid + scanline (efeito painel digital) */
@@ -106,13 +83,7 @@
     content: "";
     position: absolute;
     inset: 0;
-
-    background: repeating-linear-gradient(to right,
-            rgba(0, 255, 255, 0.05),
-            rgba(0, 255, 255, 0.05) 1px,
-            transparent 1px,
-            transparent 8px);
-
+    background: repeating-linear-gradient(to right, rgba(0, 255, 255, 0.3), rgba(0, 255, 255, 0.3) 1px, transparent 1px, transparent 8px);
     opacity: 0.2;
     pointer-events: none;
 }
@@ -120,19 +91,15 @@
 .hud-frame::after {
     content: "";
     position: absolute;
-    
     inset: 0;
     pointer-events: none;
-
     background: linear-gradient(90deg,
             transparent 0%,
             transparent 40%,
-            rgba(0, 255, 255, 0.15) 48%,
-            rgba(0, 255, 255, 0.6) 50%,
-            rgba(0, 255, 255, 0.15) 52%,
-            transparent 60%,
+            rgba(0, 255, 255, 0.15) 50%,
+            rgba(0, 255, 255, 0.6) 50.5%,
+            transparent 50.6%,
             transparent 100%);
-
     animation: scanHorizontal 10s linear infinite;
 }
 
