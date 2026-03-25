@@ -4,10 +4,10 @@ import { EquipeService } from '../../../../services/equipe-service';
 import { EquipeDTO } from '../../../../model/equipe-dto';
 
 @Component({
-	selector: 'app-admin-dialog',
+	selector: 'admin-dialog',
 	standalone: false,
-	templateUrl: './admin-dialog.html',
-	styleUrl: './admin-dialog.css',
+	templateUrl: './admin.html',
+	styleUrl: './admin.css',
 })
 export class AdminDialog implements OnInit {
 
