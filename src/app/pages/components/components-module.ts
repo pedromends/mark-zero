@@ -10,7 +10,7 @@ import { CardModule } from 'primeng/card';
 import { AdminDialog } from './_dialogs/admin-dialog/admin-dialog';
 import { StandardButton } from './_buttons/standard-button/standard-button';
 import { TabsModule } from 'primeng/tabs';
-import { AdminDialogButton } from './_buttons/button-dialog-adm/button-dialog-adm';
+import { AdminDialogButton } from './_buttons/dialog-admin/dialog-admin';
 import { DialogModule } from 'primeng/dialog';
 
 @NgModule({

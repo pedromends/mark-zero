@@ -3,10 +3,10 @@ import { DialogService } from 'primeng/dynamicdialog';
 import { AdminDialog } from '../../_dialogs/admin-dialog/admin-dialog';
 
 @Component({
-	selector: 'button-dialog-adm',
+	selector: 'btn-dialog-admin',
 	standalone: false,
-	templateUrl: './button-dialog-adm.html',
-	styleUrl: './button-dialog-adm.css',
+	templateUrl: './dialog-admin.html',
+	styleUrl: './dialog-admin.css',
 })
 export class AdminDialogButton {
 

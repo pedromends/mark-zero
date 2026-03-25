@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminDialogButton } from './button-dialog-adm';
+import { AdminDialogButton } from './dialog-admin';
 
 describe('AdminDialogButton', () => {
 	let component: AdminDialogButton;
