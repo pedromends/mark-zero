@@ -12,6 +12,8 @@ import { StandardButton } from './_buttons/standard-button/standard-button';
 import { TabsModule } from 'primeng/tabs';
 import { AdminDialogButton } from './_buttons/dialog-admin/dialog-admin';
 import { DialogModule } from 'primeng/dialog';
+import { DialogMain } from './_buttons/dialog-main/dialog-main';
+import { MainDialog } from './_dialogs/main/main';
 
 @NgModule({
 	declarations: [
@@ -19,6 +21,8 @@ import { DialogModule } from 'primeng/dialog';
 		AdminDialog,
 		StandardButton,
 		AdminDialogButton,
+		DialogMain,
+		MainDialog,
 	],
 	imports: [
 		CommonModule,
@@ -36,6 +40,8 @@ import { DialogModule } from 'primeng/dialog';
 		Layout,
 		StandardButton,
 		AdminDialogButton,
+		DialogMain,
+		MainDialog,
 	],
 })
 export class ComponentsModule { }

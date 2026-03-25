@@ -1,10 +1,10 @@
 export const dialogCSS = 
 `
     .p-dialog {
-        background: #0193a0;
+        background: #0a1428d9;
     }
     .p-dialog-header {
-        background-color: #000000;
+        background-color: transparent;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
     }

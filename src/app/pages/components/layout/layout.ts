@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
 })
 export class Layout {
 	visible: boolean = false;
-
 }

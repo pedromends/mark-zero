@@ -1,0 +1,64 @@
+::ng-deep .stark-container {
+    position: relative;
+    background: #0a1428d9;
+    border: 1px solid rgba(0, 200, 255, 0.4);
+    backdrop-filter: blur(8px);
+
+    padding: 2rem;
+    color: #9fefff;
+
+    clip-path: polygon(20px 0%,
+            calc(100% - 20px) 0%,
+            100% 20px,
+            100% calc(100% - 20px),
+            calc(100% - 20px) 100%,
+            20px 100%,
+            0% calc(100% - 20px),
+            0% 20px);
+}
+
+::ng-deep .stark-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    clip-path: inherit;
+
+    border: 1px solid rgba(0, 200, 255, 0.8);
+    box-shadow:
+        0 0 10px rgba(0, 200, 255, 0.6),
+        inset 0 0 10px rgba(0, 200, 255, 0.3);
+
+    pointer-events: none;
+}
+
+::ng-deep .stark-container::after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+
+    background: repeating-linear-gradient(to right,
+            rgba(0, 200, 255, 0.05),
+            rgba(0, 200, 255, 0.05) 1px,
+            transparent 1px,
+            transparent 6px);
+
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+::ng-deep .stark-header {
+    position: relative;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+
+    background: linear-gradient(90deg,
+            rgba(0, 200, 255, 0.2),
+            transparent);
+
+    clip-path: polygon(0 0,
+            calc(100% - 20px) 0,
+            100% 50%,
+            calc(100% - 20px) 100%,
+            0 100%);
+}
