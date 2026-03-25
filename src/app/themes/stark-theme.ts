@@ -1,4 +1,4 @@
-import { dialogCSS, tabsCSS } from "./components/dialog-theme";
+import { dataTableCSS, dialogCSS, tabsCSS } from "./components/dialog-theme";
 import { definePreset } from "@primeng/themes"
 import Aura from '@primeuix/themes/aura';
 
@@ -9,6 +9,9 @@ export const StarkTheme = definePreset(Aura, {
 		},
 		tabs: {
 			css: ({ dt }) => tabsCSS
+		},
+		datatable: {
+			css: ({ dt }) => dataTableCSS
 		},
 	},
 	semantic: {

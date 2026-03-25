@@ -1,23 +1,29 @@
-export const dialogCSS = 
-`
-    .p-dialog {
-        background: #0a1428d9;
-    }
-    .p-dialog-header {
-        background-color: transparent;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
+export const dialogCSS =
+    `
     .p-dialog-content {
         padding: 0;
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;
     }
 `
 
-export const tabsCSS = 
+export const tabsCSS =
+    `
+    .p-tablist {
+        background: linear-gradient(90deg, rgba(0, 255, 255, 0.25), transparent);
+    }
+
+      .p-tabpanels{
+        background: transparent;
+      }
+
+    .p-tab {
+        color: rgba(0, 255, 255, 0.6);
+    }
+
 `
-    .p-tabs {
-        background: #0193a0;
-    } 
+
+export const dataTableCSS = 
+`
+    .p-datatable-tbody > tr, .p-datatable-thead > tr > th {
+        background-color: transparent
+    }
 `
