@@ -1,3 +1,9 @@
-<div class="stark-container">
-    Teste
+<div class="hud-frame">
+    <div class="hud-header">
+        <span>SYSTEM_ROOT (ADMIN ACCESS)</span>
+        <button (click)="close()" class="hud-close mr-3">✕</button>
+    </div>
+    <div class="hud-content">
+        <ng-content></ng-content>
+    </div>
 </div>

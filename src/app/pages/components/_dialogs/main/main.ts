@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DialogService } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 
 @Component({
     selector: 'app-main',
@@ -10,4 +10,9 @@ import { DialogService } from 'primeng/dynamicdialog';
 export class MainDialog {
 
     visible: boolean = false;
+    constructor(private ref: DynamicDialogRef<MainDialog>){}
+
+    close(){
+        this.ref.close()
+    }
 }

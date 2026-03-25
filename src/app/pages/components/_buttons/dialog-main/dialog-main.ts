@@ -20,7 +20,7 @@ export class DialogMain {
 			draggable: false,
 			width: '800px',
 			closeOnEscape: true,
-
+			showHeader: false,
 		});
 
 		dialog?.onClose.subscribe({
