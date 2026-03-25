@@ -7,7 +7,7 @@ import { TableModule } from 'primeng/table';
 import { DrawerModule } from 'primeng/drawer';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-import { AdminDialog } from './_dialogs/admin-dialog/admin-dialog';
+import { AdminDialog } from './_dialogs/admin/admin';
 import { StandardButton } from './_buttons/standard-button/standard-button';
 import { TabsModule } from 'primeng/tabs';
 import { AdminDialogButton } from './_buttons/dialog-admin/dialog-admin';

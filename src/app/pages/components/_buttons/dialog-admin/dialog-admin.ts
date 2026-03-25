@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DialogService } from 'primeng/dynamicdialog';
-import { AdminDialog } from '../../_dialogs/admin-dialog/admin-dialog';
+import { AdminDialog } from '../../_dialogs/admin/admin';
 
 @Component({
 	selector: 'btn-dialog-admin',
