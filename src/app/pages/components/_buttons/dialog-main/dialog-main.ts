@@ -18,7 +18,7 @@ export class DialogMain {
 		const dialog = this.dialogService.open(MainDialog, {
 			closable: true,
 			draggable: false,
-			width: '800px',
+			width: 'auto',
 			closeOnEscape: true,
 			showHeader: false,
 		});
